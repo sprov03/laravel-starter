@@ -11,6 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+/** All Web controllers will go here */
+Route::middleware('auth')->group(function () {
+    Route::fallback(function () {
+        if (Auth::check()) {
+            /** @var User $user */
+            $user = Auth::user();
+            $store = [];
+        } else {
+            $store = [];
+        }
+
+        return view('client-app', ['store' => $store]);
+    });
 });
+

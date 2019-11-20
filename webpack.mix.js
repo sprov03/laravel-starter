@@ -11,9 +11,5 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/tailwind/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .browserSync({
-        proxy: 'tailwind.demo',
-        notify: false
-    });
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
