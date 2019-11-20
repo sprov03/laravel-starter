@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dummy-data', function() {
+    sleep(2);
+    return [
+        'data' => 'working'
+    ];
+});
 
 /** All Web controllers will go here */
 Route::middleware('auth')->group(function () {
