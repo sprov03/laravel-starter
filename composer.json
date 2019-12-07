@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "akceli/laravel-code-generator": "^1.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^1.0"
@@ -42,8 +43,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
-        }
+            "Tests\\": "tests/",
+            "Akceli\\Generators\\": "akceli/generators/",
+            "Factories\\": "database/factories/"
+        },
+        "files": [
+            "akceli/AkceliTableDataTrait.php",
+            "akceli/AkceliColumnTrait.php"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -58,5 +65,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.akceli.io"
+        }
+    ]
 }
