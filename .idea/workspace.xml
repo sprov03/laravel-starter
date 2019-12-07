@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="926808a4-fa4b-4653-964f-2523e94a655d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="926808a4-fa4b-4653-964f-2523e94a655d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +112,8 @@
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/akceli/laravel-code-generator" />
+      <path value="$PROJECT_DIR$/vendor/league/plates" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TrUIRkSKgA7osMK0UNoEkOq6Gb" />
@@ -178,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574217627834</updated>
       <workItem from="1574217629098" duration="2164000" />
-      <workItem from="1575724087072" duration="259000" />
+      <workItem from="1575724087072" duration="539000" />
     </task>
     <servers />
   </component>
